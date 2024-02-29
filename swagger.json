@@ -11,12 +11,57 @@
   },
   "servers": [
     {
+      "url": "http://localhost:3000/v1"
+    },
+    {
       "url": "https://robchamberspfc-api.onrender.com/v1"
     }
   ],
   "paths": {
-    "/people/{id}": {
+    "/people": {
       "description": "List of all people and details",
+      "get": {
+        "description": "Operation to fetch all people",
+        "responses": {
+          "200": {
+            "description": "sucess",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "example": "123"
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "Rob"
+                      },
+                      "heighte": {
+                        "type": "string",
+                        "example": "175"
+                      },
+                      "interests": {
+                        "type": "array",
+                        "example": [
+                          {
+                            "name": "Football"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/people/{id}": {
+      "description": "Details of a single person",
       "get": {
         "description": "Operation to fetch specific person",
         "parameters": [
