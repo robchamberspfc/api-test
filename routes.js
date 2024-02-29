@@ -4,7 +4,6 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 
 const people = require('./content/people.json')
-// const sport = require('./content/sport.json')
 
 // Helpers
 getIndex = (field, entry) => {

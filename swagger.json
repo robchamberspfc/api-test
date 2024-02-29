@@ -4,7 +4,7 @@
     "title": "People API",
     "description": "Demo API focussed on people and their interests",
     "contact": {
-      "name": "Rob",
+      "name": "Rob Chambers",
       "url": "https://robchamberspfc-api.onrender.com"
     },
     "version": "0.1.0"
@@ -15,18 +15,18 @@
     }
   ],
   "paths": {
-    "/student": {
-      "description": "Student resource",
+    "/people/{id}": {
+      "description": "List of all people and details",
       "get": {
-        "description": "Operation to fetch student",
+        "description": "Operation to fetch specific person",
         "parameters": [
           {
-            "in": "query",
-            "name": "studentname",
+            "name": "id",
+            "in": "path",
             "required": true,
             "schema": {
               "type": "string",
-              "example": "Rob"
+              "example": 123
             }
           }
         ],
@@ -39,13 +39,25 @@
                   "type": "array",
                   "items": {
                     "properties": {
-                      "studentID": {
-                        "type": "integer",
-                        "example": 3
-                      },
-                      "studentname": {
+                      "id": {
                         "type": "string",
-                        "example": "Mark"
+                        "example": "123"
+                      },
+                      "name": {
+                        "type": "string",
+                        "example": "Rob"
+                      },
+                      "heighte": {
+                        "type": "string",
+                        "example": "175"
+                      },
+                      "interests": {
+                        "type": "array",
+                        "example": [
+                          {
+                            "name": "Football"
+                          }
+                        ]
                       }
                     }
                   }

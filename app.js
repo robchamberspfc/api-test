@@ -6,6 +6,8 @@ const routes = require('./routes');
 
 app.use('/v1', routes);
 
+app.use('/data', express.static('content'))
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
