@@ -1,0 +1,28 @@
+[{
+    "id": "123",
+    "name": "Rob",
+    "height": "180",
+    "interests": [{
+        "name": "Football"
+    }, {
+        "name": "Chess"
+    }]
+}, {
+    "id": "456",
+    "name": "Steve",
+    "height": "170",
+    "interests": [{
+        "name": "Netball"
+    }, {
+        "name": "Golf"
+    }]
+}, {
+    "id": "789",
+    "name": "Dave",
+    "height": "160",
+    "interests": [{
+        "name": "Basketball"
+    }, {
+        "name": "Football"
+    }]
+}]
