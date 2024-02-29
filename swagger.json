@@ -11,7 +11,7 @@
   },
   "servers": [
     {
-      "url": "https://robchamberspfc-api.onrender.com"
+      "url": "https://robchamberspfc-api.onrender.com/v1"
     }
   ],
   "paths": {
