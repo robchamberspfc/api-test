@@ -11,10 +11,10 @@
   },
   "servers": [
     {
-      "url": "http://localhost:3000/v1"
+      "url": "https://robchamberspfc-api.onrender.com/v1"
     },
     {
-      "url": "https://robchamberspfc-api.onrender.com/v1"
+      "url": "http://localhost:3000/v1"
     }
   ],
   "paths": {
